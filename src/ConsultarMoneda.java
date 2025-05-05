@@ -6,9 +6,10 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+//consultar a la api
 public class ConsultarMoneda {
 
-
+    // llama a la api y le envia los datos que requerimos
     public Moneda tipoDeMoneda(String monedaBase, String monedaObjetivo, double cantidad){
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/76c58539963e7209d545ebde/pair/" + monedaBase + "/" + monedaObjetivo + "/" + cantidad );
 
@@ -17,7 +18,7 @@ public class ConsultarMoneda {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(direccion)
                 .build();
-
+        // envia los datos recibidos a la clase Moneda para ser almacenados
         try {
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
