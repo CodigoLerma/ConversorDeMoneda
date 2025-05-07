@@ -71,10 +71,7 @@ public class Principal {
                 case 7:
                     System.out.println("Saliendo de la aplicacion");
                     break;
-
-                case 8:
-                    System.out.println("Saliendo de la aplicacion");
-                    break;
+                    
 
                 default:
                     System.out.println("Favor de elegir una opcion valida");
