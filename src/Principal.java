@@ -38,6 +38,8 @@ public class Principal {
             }
 
 
+
+
             // casos para la opcion elegida
 
             switch (opcion) {
@@ -70,8 +72,12 @@ public class Principal {
                     System.out.println("Saliendo de la aplicacion");
                     break;
 
+                case 8:
+                    System.out.println("Saliendo de la aplicacion");
+                    break;
+
                 default:
-                    System.out.println("Favor de elegir el valor correcto");
+                    System.out.println("Favor de elegir una opcion valida");
                     break;
 
 
